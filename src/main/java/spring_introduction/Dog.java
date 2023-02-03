@@ -28,16 +28,16 @@ public class Dog implements Pet{
     public Dog() {
         System.out.println("Dog bean is created");
     }
-
-    @PostConstruct
-    protected void init() {
-        System.out.println("Clas Dog: init method");
-    }
-
-    @PreDestroy
-    private void destroy() {
-        System.out.println("Class Dog: destroy method");
-    }
+//
+//    @PostConstruct
+//    protected void init() {
+//        System.out.println("Class Dog: init method");
+//    }
+//
+//    @PreDestroy
+//    private void destroy() {
+//        System.out.println("Class Dog: destroy method");
+//    }
 
 
 }
