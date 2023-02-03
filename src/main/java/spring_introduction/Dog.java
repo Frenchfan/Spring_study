@@ -5,7 +5,7 @@ import jakarta.annotation.PreDestroy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 //@Scope("prototype")
 //singleton - by default,указываем просто для практики
 public class Dog implements Pet{
