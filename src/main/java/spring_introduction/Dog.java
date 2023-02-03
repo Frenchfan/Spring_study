@@ -1,8 +1,13 @@
 package spring_introduction;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+//@Scope("prototype")
+//singleton - by default,указываем просто для практики
 public class Dog implements Pet{
 
 //    private String name;
@@ -24,11 +29,13 @@ public class Dog implements Pet{
         System.out.println("Dog bean is created");
     }
 
-    public void init() {
+    @PostConstruct
+    protected void init() {
         System.out.println("Clas Dog: init method");
     }
 
-    public void destroy() {
+    @PreDestroy
+    private void destroy() {
         System.out.println("Class Dog: destroy method");
     }
 
