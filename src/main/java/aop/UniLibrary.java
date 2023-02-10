@@ -10,6 +10,7 @@ public class UniLibrary extends AbstractLibrary{
     }
 
     public String returnBook() {
+        int a = 10 / 0; // Добавляем эту строку, чтобы выбрасывалось исключение
         System.out.println("Мы возвращаем книгу в UniLibrary");
         return "Война и мир";
     }
